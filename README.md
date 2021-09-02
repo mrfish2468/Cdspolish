@@ -4,14 +4,14 @@ CDSpolish is a genome polisher developed for generating a high-quality genome fo
 # Installation
 CDSpolish is recommendated to install and run within a conda environment
 
-	git clone https://github.com/ythuang0522/homopolish.git
+	git clone https://github.com/mrfish2468/Cdspolish.git
 	cd cdspolish
 	conda env create -f environment.yml
 	conda activate cdspolish
 
 # Quick usage
 
-Cdspolish should be run with a pre-trained model (R9.4.pkl/R10.3.pkl for Nanopore and pb.pkl for PacBio CLR) and one sketch (virus, bacteria, or fungi). For Nanopore sequencing, Cdspolish should be run after the Racon-Medaka-Homopolish pipeline as it only removes indel errors. Note that the taxonomy of the draft genome need to be identified to genus level in advance for Cdspolish to work. For instance, if your Homopolish-polished genome (yourgenome.fasta) is bacteria and sequenced by R9.4 flowcell and genus is known(yourgenus), please type
+Cdspolish should be run with a pre-trained model (R9.4.model). For Nanopore sequencing, Cdspolish should be run after the Racon-Medaka-Homopolish pipeline as it only removes indel errors. Note that the taxonomy of the draft genome need to be identified to genus level in advance for Cdspolish to work. For instance, if your Homopolish-polished genome (yourgenome.fasta) is sequenced by R9.4 flowcell and genus is pre-identified(yourgenus), please type
 ```
-python3 cdspolish.py yourgenome.fasta R9.4.pkl yourgenus youroutput
+python3 cdspolish.py yourgenome.fasta R9.4.model yourgenus youroutput
 ```
