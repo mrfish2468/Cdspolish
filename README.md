@@ -1,5 +1,5 @@
 # Introduction
-CDSpolish is a genome polisher developed for generating a high-quality genome for Nanopore bacteria sequence. Nanopore systematic errors are corrected by retreiving coding sequences from ENA database and polished by an Random Forest. When paired with Racon, Medaka and homopolish, the genome quality can slightly increase and frameshift in plasmids can be removed. For metagenome, indels can be reduced up to 34.7%.
+CDSpolish is a genome polisher developed for generating a high-quality genome for Nanopore bacteria sequence. Nanopore systematic errors are corrected by retreiving coding sequences from ENA database and polished by an Random Forest. When paired with Racon, Medaka and homopolish, the genome quality can reach nearly Q50 and frameshift in plasmids can be removed. For metagenome, indels can be reduced up to 34.7%.
 
 # Installation
 CDSpolish is recommendated to install and run within a conda environment
